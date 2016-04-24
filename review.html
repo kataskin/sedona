@@ -1,0 +1,152 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a href="index.html" class="page-header__logo"></a>
+        <nav class="page-header__nav">
+          <a href="#" class="page-header__icon-nav page-header__icon-nav--close">Закрыть/открыть</a>
+          <ul class="page-header__nav-list">
+            <li class="page-header__nav-item">
+              <a href="index.html" class="page-header__nav-item-link">
+                Главная
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="photo.html" class="page-header__nav-item-link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a class="page-header__nav-item-link page-header__nav-item-link--active">
+                Форма отзыва
+              </a>
+            </li>
+            <li class="page-header__nav-item">
+              <a href="https://htmlacademy.html" class="page-header__nav-item-link">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="welcome welcome--inner-page">
+        <div class="welcome__slogan welcome__slogan--innerpage"></div>
+      </section>
+      <section class="form">
+        <form>
+          <div class="form__section-wrapperr">
+            <h3 class="form__promo-title">
+              Оставьте свой отзыв
+            </h3>
+            <p class="form__promo-title">
+              Потогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о
+              посещенных вами достопримечательностях
+            </p>
+          </div>
+          <div class="form__section-wrapper form__section-wrapper--user-name">
+            <h2 class="form__section-name">
+              Представьтесь, пожадуйста:
+            </h2>
+            <div class="form__section-item-wrapper">
+              <label class="form__input-name" for="user-name">
+                Имя:
+              </label>
+              <input class="form__input-text" type="text" id="user-name" placeholder="Петр">
+            </div>
+            <div class="form__section-item-wrapper">
+              <label class="form__input-name" for="user-surname">
+                Фамилия:
+              </label>
+              <input class="form__input-text" type="text" id="user-surname" placeholder="Иванов">
+            </div>
+            <div class="form__section-item-wrapper">
+              <label class="form__input-name" for="user-patronymic">
+                Отчество:
+              </label>
+              <input class="form__input-text" type="text" id="user-patronymic" placeholder="Александрович">
+            </div>
+          </div>
+          <div class="form__section-wrapper form__section-wrapper--user-contacts">
+            <h2 class="form__section-name">
+              Контактная информация:
+            </h2>
+            <div class="form__section-item-wrapper form__section-item-wrapper--contacts">
+              <label class="form__input-name" for="user-phone">
+                Контактный телефон:
+              </label>
+              <input class="form__input-text" type="text" id="user-phone" placeholder="Введите телефон">
+            </div>
+            <div class="form__section-item-wrapper form__section-item-wrapper--contacts">
+              <label class="form__input-name" for="user-email">
+                Электронная почта:
+              </label>
+              <input class="form__input-text" type="text" id="user-email" placeholder="Введите e-mail">
+            </div>
+          </div>
+          <div class="form__section-wrapper form__section-wrapper--user-impression">
+            <h2 class="form__section-name">
+              Ваше общее впечатление:
+            </h2>
+            <input class="form__input-radio" type="radio" id="good-impression" name="impression">
+            <label class="form__radio-name" for="good-impression">
+              Скорее положительное
+            </label>
+            <input class="form__input-radio" type="radio" id="bad-impression" name="impression">
+            <label class="form__radio-name" for="bad-impression">
+              Скорее отрицательное
+            </label>
+            <input class="form__input-radio" type="radio" id="other-impression" name="impression">
+            <label class="form__radio-name" for="other-impression">
+              Затрудняюсь ответить
+            </label>
+          </div>
+          <div class="form__section-wrapper form__section-wrapper--user-attractions">
+            <h2 class="form__section-name">
+              Посещенные достопримечательности:
+            </h2>
+            <input class="form__input-checkbox" type="checkbox" id="devils-bridge" name="attractions">
+            <label class="form__checkbox-name" for="devils-bridge">
+              Мост Дьявола
+            </label>
+            <input class="form__input-checkbox" type="checkbox" id="slide-park" name="attractions">
+            <label class="form__checkbox-name" for="slide-park">
+              Слайд-парк
+            </label>
+            <input class="form__input-checkbox" type="checkbox" id="mountain" name="attractions">
+            <label class="form__radio-checkbox" for="moun">
+              Затрудняюсь ответить
+            </label>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__tag">
+          #visitsedona
+        </div>
+        <ul class="page-footer__social-list">
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link page-footer__social-link--twitter"></a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link page-footer__social-link--facebook"></a>
+          </li>
+          <li class="page-footer__social-item">
+            <a href="#" class="page-footer__social-link page-footer__social-link--you-tube"></a>
+          </li>
+        </ul>
+        <a href="https://htmlacademy.ru" class="page-footer__copyright">
+          Разработано
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
