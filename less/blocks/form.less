@@ -1,0 +1,87 @@
+.form {
+  @media @tablet-widths {
+    width: @tablet-width-wrapper;
+    padding: 0 @tablet-width-wrapper-padding;
+  }
+}
+
+.form__section-wrapper {
+  width: @mobile-width-wrapper;
+  padding: 0 @mobile-width-wrapper-padding;
+  border-bottom: 1px solid #e5e5e5;
+  @media @tablet-widths {
+    padding: 0;
+    border-bottom: none;
+  }
+}
+
+.form__section-wrapper--promo {
+  text-align: center;
+}
+
+.form__section-wrapper--user-impression {
+  @media @tablet-widths {
+    order: -1;
+  }
+}
+
+.form__sections {
+  display: flex;
+  flex-direction: column;
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__section-name {
+  text-align: center;
+}
+
+.form__section-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-item {
+  display: flex;
+  &--user-name {
+    flex-direction: row;
+  }
+  &--user-contact {
+    flex-direction: column;
+  }
+}
+
+.form__input-text {
+  flex-grow: 1;
+}
+
+.form__input-radio,
+.form__input-checkbox {
+  display: none;
+}
+
+.form__section-wrapper--user-name .form__section-name::after {
+  content: ", пожалуйста:";
+  @media @tablet-widths {
+    content: ":";
+  }
+}
+
+.form__section-wrapper--user-emotions {
+  border-bottom: none;
+}
+
+.form__textarea {
+  width: 100%;
+  resize: none;
+}
+
+.form__section-wrapper--button {
+  border-bottom: none;
+}
+
+.form__btn {
+  width: 100%;
+}

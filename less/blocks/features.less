@@ -1,0 +1,126 @@
+.features {
+  @media @desktop-widths {
+    width: @desktop-width-wrapper;
+    margin: 0 auto;
+  }
+}
+
+.features__wrapper-promo {
+  padding-left: @mobile-width-wrapper-padding;
+  padding-right: @mobile-width-wrapper-padding;
+  @media @tablet-widths {
+    padding-left: @tablet-width-wrapper-padding;
+    padding-right: @tablet-width-wrapper-padding;
+  }
+
+  outline: 2px solid red;
+}
+
+.features__slogan {
+  margin: 20px auto 10px;
+  text-align: center;
+  @media @tablet-widths {
+    width: 550px;
+  }
+
+  outline: 2px solid blue;
+}
+
+.features__text {
+  margin: 20px auto 0;
+  padding-bottom: 55px;
+  text-align: center;
+  @media @tablet-widths {
+    width: 550px;
+  }
+
+  outline: 2px solid green;
+}
+
+.features__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  @media @tablet-widths {
+    flex-direction: row;
+    flex-wrap: wrap;
+    &:not(.features__item--active) {
+      width: 100% / 3;
+    }
+  }
+
+  outline: 2px solid green;
+}
+
+.features__item-opportunities .features__item--second {
+}
+
+.features__item-wrapper {
+  padding-left: @mobile-width-wrapper-padding;
+  padding-right: @mobile-width-wrapper-padding;
+  text-align: center;
+  @media @tablet-widths {
+    box-sizing: border-box;
+    width: 100% / 3;
+    padding: 45px;
+  }
+
+  outline: 2px solid blue;
+}
+
+.features__item:not(.features__item--active) .features__item-wrapper {
+  @media @tablet-widths {
+    width: 100%;
+  }
+}
+
+.features__item-description {
+
+
+  outline: 2px solid red;
+}
+
+.features__item-photo {
+  width: 100%;
+  height: auto;
+  @media @tablet-widths {
+    width: 100% / 3 * 2;
+  }
+}
+
+.features__item--second .features__item-photo {
+  order: -1;
+}
+
+.features__item-opportunities {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-left: @mobile-width-wrapper-padding;
+  padding-right: @mobile-width-wrapper-padding;
+  list-style: none;
+  @media @tablet-widths {
+    flex-direction: row;
+    padding: 0;
+  }
+}
+
+.features__item-opportunity {
+  padding-left: 50px;
+  @media @tablet-widths {
+    padding: 160px 45px 45px;
+    text-align: center;
+  }
+}
